@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Timeline test with D3 via FlaskApp</title>
+    <!-- SOURCE http://bl.ocks.org/rengel-de/5603464 -->
+
+    <link title="Semantic-ui" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css">
+    <link href="/static/css/timeline.css" rel="stylesheet" type="text/css" />
+  
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.js"></script>
+    <!-- Not working with v5..... -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>    
+    <script src="/static/js/timelined3.js"></script>         
+  </head>
+
+  <body>
+      {% include 'includes/_navbar.html' %}
+      <div class="ui container pusher">
+        <div class="ui segment">
+           {% block body %}{% endblock %}
+        </div>
+      </div>
+  </body>
+</html>

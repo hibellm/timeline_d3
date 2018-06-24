@@ -1,0 +1,18 @@
+{% extends 'layout_st1.html' %}
+
+{% block body %}
+
+<noscript>
+    This page uses Javascript to show you a Timeline. Please enable Javascript in your browser to see the full page. Thank you.
+</noscript> 
+
+    
+      <div id="content">             
+        <div id="tl" class="timeline-default timeline-container timeline-horizontal" style="height: 600px;"></div>
+      </div>
+      
+ 
+    <iframe id="simile-ajax-history" src="__history__.html?0" style="position: absolute; width: 10px; height: 10px; top: 0px; left: 0px; visibility: hidden;"></iframe>
+
+
+{% endblock %}
