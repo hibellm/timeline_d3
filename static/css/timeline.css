@@ -81,12 +81,18 @@
 }
 
 .vs {
-  fill: #f70707!important;
+  fill: #0E6EB8!important;
 }
 .dm {
-  fill: #5463ab!important;
+  fill: #ff0000!important;
 }
 .ex {
+  fill: #1ee14f!important;
+}
+.zd {
+  fill: #8000ff!important;
+}
+.ae {
   fill: #7d8b74!important;
 }
 

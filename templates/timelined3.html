@@ -17,9 +17,9 @@
 
             <div class="ui ten columns">
                 <hr>
-                <div class="ui button red compact small"><i class="ui icon filter"></i> Filter</div>
-                <div class="ui button blue compact small"><i class="ui icon filter"></i> Filter</div>
-                <div class="ui button green compact small"><i class="ui icon filter"></i> Filter</div>
+                <div class="ui button red compact small" id="dm" onclick="changeClass()"><i class="ui icon filter"></i> Filter</div>
+                <div class="ui button blue compact small" id="vs" onclick="changeClass()"><i class="ui icon filter"></i> Filter</div>
+                <div class="ui button green compact small" id="ex" onclick="changeClass()"><i class="ui icon filter"></i> Filter</div>
             </div>
         </div>
     </div>
@@ -107,6 +107,10 @@
 
     });
 
+function changeClass(){
+    if ( document.getElementById("dm").classList.contains('blue') )
+         document.getElementById("dm").classList.toggle('blue inverted');
+    }
 </script>
 
 {% endblock %}

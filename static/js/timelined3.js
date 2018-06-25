@@ -10,7 +10,7 @@ function timeline(domElement) {
 
     // chart geometry
     var margin = {top: 20, right: 20, bottom: 20, left: 20},
-        outerWidth = 960,
+        outerWidth = 1100,
         outerHeight = 500,
         width = outerWidth - margin.left - margin.right,
         height = outerHeight - margin.top - margin.bottom;
@@ -51,6 +51,7 @@ function timeline(domElement) {
         .append("div")
         .attr("class", "ui segment")
         .style("visibility", "visible");
+
 
     //--------------------------------------------------------------------------
     //
@@ -225,7 +226,7 @@ function timeline(domElement) {
             .attr("height", "100%")
             .attr("class", function (d) { return d.type });
         intervals.append("text")
-            .attr("class", "intervalLabel")
+            .attr("class", "intervalLabel") 
             .attr("x", 1)
             .attr("y", 10)
             .text(function (d) { return d.label; });
@@ -504,7 +505,8 @@ function timeline(domElement) {
         // bcString is the prefix or postfix for BC dates.
         // If bcString starts with '-' (minus),
         // if will be placed in front of the year.
-        bcString = bcString || " BC" // With blank!
+        //bcString = bcString || " BC" // With blank!
+        bcString = bcString || "" // With blank!
         var year = date.getUTCFullYear();
         if (year > 0) return year.toString();
         if (bcString[0] == '-') return bcString + (-year);

@@ -55,12 +55,12 @@ def test ():
     a1="active"
     return render_template('test.html',tline=tline,a1=a1,t=title,h=heading)
 
-@app.route("/about")
+@app.route("/about") 
 def about():
     return render_template('credits.html',t=title,h=heading)
 
 
 if __name__ == "__main__":
     app.secret_key='secret456'
-    app.run('0.0.0.0',8015,debug=True)
-    #app.run(port=5005,debug=True)
+    #app.run('0.0.0.0',8015,debug=True)
+    app.run(port=5005,debug=True)
