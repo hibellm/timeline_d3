@@ -43,9 +43,13 @@ function timeline(domElement) {
             .attr("class", "chart")
             .attr("clip-path", "url(#chart-area)" );
 
-    var tooltip = d3.select("body")
+//    var tooltip = d3.select("body")
+//        .append("div")
+//        .attr("class", "tooltip")
+//        .style("visibility", "visible");
+    var tooltip = d3.select("div#result")
         .append("div")
-        .attr("class", "tooltip")
+        .attr("class", "ui segment")
         .style("visibility", "visible");
 
     //--------------------------------------------------------------------------
@@ -356,8 +360,8 @@ function timeline(domElement) {
             return html;
         }
 
-        function showTooltip (d) {
 
+        function showTooltip (d) {
             var x = event.pageX < band.x + band.w / 2
                     ? event.pageX + 10
                     : event.pageX - 110,
@@ -367,9 +371,9 @@ function timeline(domElement) {
 
             tooltip
                 .html(getHtml(d3.select(this), d))
-                .style("top", y + "px")
-                .style("left", x + "px")
-                .style("visibility", "visible");
+                // .style("top", y + "px")
+                // .style("left", x + "px")
+                .style("visibility", "visible")
         }
 
         function hideTooltip () {
