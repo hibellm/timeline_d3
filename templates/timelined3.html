@@ -6,9 +6,7 @@
   <div class="ui right attached rail">
     <div class="ui segment">
         <div class="ui header">Legend</div>
-
         <div class="ui grid">
-
             <div class="ui four columns">
                 <div><i class="ui icon circle red"></i>Demography</div>
                 <div><i class="ui icon circle blue"></i>Vital Signs</div>
@@ -27,7 +25,7 @@
 
     <div class="ui segment" id="result">
         <div class="ui header">Results</div>
-            <div id="mjh"></div>
+        <div id="mjh"></div>
     </div>
 
 
@@ -107,10 +105,6 @@
 
     });
 
-function changeClass(){
-    if ( document.getElementById("dm").classList.contains('blue') )
-         document.getElementById("dm").classList.toggle('blue inverted');
-    }
 </script>
 
 {% endblock %}

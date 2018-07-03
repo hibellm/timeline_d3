@@ -105,13 +105,13 @@
 
 .instantLabel {
   fill : blue;
-  font: 10px sans-serif;
+  /*font: 10px sans-serif;*/
   shape-rendering: crispEdges;
 }
 
 .intervalLabel {
   fill : black;
-  font: 10px sans-serif;
+  /*font: 10px sans-serif;*/
   shape-rendering: crispEdges;
 }
 
